@@ -41,7 +41,11 @@ class YoloDetector(Node):
         
         if model_path.endswith('.pt') and not os.path.exists(engine_path):
             self.get_logger().info(f'Exporting {model_path} to TensorRT engine...')
+<<<<<<< HEAD
             YOLO(model_path).export(format="engine", device=0, half=True)
+=======
+            YOLO(model_path).export(format="engine", device="dla:0", half=True)
+>>>>>>> 2809772 (added pointstamped publisher to its own topic to view the identified objects, added duration max on labels to avoid rviz clutter, exported file to .engine instead of using .pt)
 
         self.model = YOLO(engine_path if os.path.exists(engine_path) else model_path)
         self.get_logger().info(f'Loaded YOLO model: {model_path}')
