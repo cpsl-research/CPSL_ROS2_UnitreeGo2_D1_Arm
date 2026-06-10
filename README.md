@@ -90,6 +90,7 @@ Most of this process is taken care of by mounting the Livox according to the off
 In order for the Go2 to receive commands from packages like Nav2, `cmd_vel` messages must be translated and sent to the Go2's internal board which handles all of its movement. As such, the `CmdVelTranslator.py` node within the `dog_utilities` needs a parameter `internal_board_ip` passed to it either when calling the main launch file, or when running the node itself. This should be the ethernet IP.
 
 ## ROS2 2D SLAM Installation
+## ROS2 2D SLAM Installation
 
 Install the required ROS 2 Foxy packages:
 
