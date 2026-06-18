@@ -1,0 +1,3 @@
+[submodule "src/CPSL_D1_Arm"]
+	path = src/CPSL_D1_Arm
+	url = https://github.com/suvasaggarwal-git/CPSL_D1_Arm
